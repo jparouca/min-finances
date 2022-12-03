@@ -1,9 +1,31 @@
+import {useEffect, useState} from "react";
 import {Header} from "../../components/Header";
 import {Summary} from "../../components/Summary";
 import {PriceHighlight, TransactionContainer, TransactionTable} from "./style";
 import {SearchForm} from "../../components/SearchForm";
 
+interface Transaction {
+  id: number;
+  description: string;
+  type: 'income' | 'outcome';
+  price: number;
+  tag: string;
+  createdAt: string;
+}
 export function Transactions() {
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
+
+  async function loadTransactions() {
+    const response = await fetch('http://localhost:3333/transactions')
+    const data = await response.json()
+
+    setTransactions(data)
+  }
+
+  useEffect(() => {
+    loadTransactions()
+  }, []);
+
   return (
     <div>
         <Header />
@@ -12,22 +34,20 @@ export function Transactions() {
         <SearchForm />
         <TransactionTable>
           <tbody>
-          <tr>
-            <td width="40%">Weekly Sales</td>
-            <td>
-              <PriceHighlight variant={"income"}> $350.00</PriceHighlight>
-            </td>
-            <td>sales</td>
-            <td>09/30/2021</td>
-          </tr>
-          <tr>
-            <td width="40%">Amazon Prime</td>
-            <td>
-              <PriceHighlight variant={"outcome"}>-$5.00</PriceHighlight>
-            </td>
-            <td>subscription</td>
-            <td>10/01/2021</td>
-          </tr>
+          {transactions.map(transaction => {
+            return (
+              <tr key={transaction.id}>
+                <td width="50%">{transaction.description}</td>
+                <td>
+                  <PriceHighlight variant={transaction.type}>
+                    {transaction.price}
+                  </PriceHighlight>
+                </td>
+                <td>{transaction.tag}</td>
+                <td>{transaction.createdAt}</td>
+              </tr>
+            )
+          })}
           </tbody>
         </TransactionTable>
       </TransactionContainer>

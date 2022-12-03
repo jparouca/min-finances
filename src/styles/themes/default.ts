@@ -18,6 +18,7 @@ export const defaultTheme = {
   'red-500': '#66201b',
   'red-700': '#66201b',
 
+  'brown-1000': '#1b1816 ',
   'brown-900': '#1c1917',
   'brown-700': '#26211FFF',
   'brown-400': '#423b36',
