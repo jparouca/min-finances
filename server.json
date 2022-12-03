@@ -1,0 +1,124 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Sales",
+      "type": "income",
+      "tag": "sales",
+      "price": 350,
+      "createdAt": "2022-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "description": "Amazon Prime",
+      "type": "outcome",
+      "tag": "subscription",
+      "price": 5,
+      "createdAt": "2022-05-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "description": "Food delivery",
+      "type": "outcome",
+      "tag": "food",
+      "price": 25,
+      "createdAt": "2022-03-01T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "description": "Car maintenance",
+      "type": "outcome",
+      "tag": "car",
+      "price": 150,
+      "createdAt": "2022-04-01T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "description": "Clothing purchase",
+      "type": "outcome",
+      "tag": "shopping",
+      "price": 75,
+      "createdAt": "2022-06-01T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "description": "Movie tickets",
+      "type": "outcome",
+      "tag": "entertainment",
+      "price": 30,
+      "createdAt": "2022-07-01T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "description": "Gift for friend's birthday",
+      "type": "outcome",
+      "tag": "gifts",
+      "price": 50,
+      "createdAt": "2022-08-01T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "description": "Public transportation",
+      "type": "outcome",
+      "tag": "transportation",
+      "price": 75,
+      "createdAt": "2022-09-01T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "description": "Haircut",
+      "type": "outcome",
+      "tag": "beauty",
+      "price": 30,
+      "createdAt": "2022-10-01T00:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "description": "Gym membership",
+      "type": "outcome",
+      "tag": "fitness",
+      "price": 40,
+      "createdAt": "2022-11-01T00:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "description": "Bonus at work",
+      "type": "income",
+      "tag": "salary",
+      "price": 500,
+      "createdAt": "2022-12-01T00:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "description": "Sale of old furniture",
+      "type": "income",
+      "tag": "selling",
+      "price": 75,
+      "createdAt": "2022-01-15T00:00:00.000Z"
+    },
+    {
+      "id": 13,
+      "description": "Interest on savings account",
+      "type": "income",
+      "tag": "savings",
+      "price": 25,
+      "createdAt": "2022-02-15T00:00:00.000Z"
+    },
+    {
+      "description": "wid",
+      "price": 15,
+      "tag": "green",
+      "type": "outcome",
+      "createdAt": "2022-12-03T07:40:38.357Z",
+      "id": 14
+    },
+    {
+      "description": "gelatto",
+      "price": 25,
+      "tag": "food",
+      "type": "outcome",
+      "createdAt": "2022-12-03T08:06:55.230Z",
+      "id": 15
+    }
+  ]
+}
