@@ -26,6 +26,11 @@ export const SearchFormContainer = styled.form`
     font-weight: bold;
     color: ${props => props.theme.white};
     cursor: pointer;
+    
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
     &:hover {
       background-image: linear-gradient(to right, #b30038, #d9b700);
     }
