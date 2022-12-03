@@ -18,8 +18,8 @@ export const SummaryContainer = styled.section`
 
 export const SummaryCard = styled.div<SummaryCardProps>`
   background-color: ${props => props.theme['brown-700']};
-  border: 1px solid white;
-  border-radius: 6px;
+  border: 0.5px solid white;
+  border-radius: 4px;
   padding: 2rem;
   
   header {

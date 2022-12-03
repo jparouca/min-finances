@@ -1,5 +1,6 @@
 import {HeaderContainer, HeaderContent, NewTransactionButton} from "./style";
 import * as Dialog from "@radix-ui/react-dialog";
+import {NewTransactionModal} from "../NewTransactionModal";
 
 export function Header() {
   return (
@@ -8,13 +9,12 @@ export function Header() {
 
         <Dialog.Root>
           <Dialog.Trigger asChild>
-            <NewTransactionButton> New Transaction</NewTransactionButton>
+            <NewTransactionButton>New Transaction</NewTransactionButton>
           </Dialog.Trigger>
 
-          <Dialog.Portal>
-            <p>Teste</p>
-          </Dialog.Portal>
+          <NewTransactionModal />
         </Dialog.Root>
+
       </HeaderContent>
     </HeaderContainer>
 )}

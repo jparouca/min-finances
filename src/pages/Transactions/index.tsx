@@ -15,7 +15,7 @@ export function Transactions() {
           <tr>
             <td width="40%">Weekly Sales</td>
             <td>
-              <PriceHighlight variant={"income"}> $ 350.00</PriceHighlight>
+              <PriceHighlight variant={"income"}> $350.00</PriceHighlight>
             </td>
             <td>sales</td>
             <td>09/30/2021</td>
@@ -23,7 +23,7 @@ export function Transactions() {
           <tr>
             <td width="40%">Amazon Prime</td>
             <td>
-              <PriceHighlight variant={"outcome"}>- $ 5.00</PriceHighlight>
+              <PriceHighlight variant={"outcome"}>-$5.00</PriceHighlight>
             </td>
             <td>subscription</td>
             <td>10/01/2021</td>

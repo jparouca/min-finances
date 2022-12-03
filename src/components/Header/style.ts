@@ -22,8 +22,8 @@ export const NewTransactionButton = styled.button`
   padding: 0.5rem;
   background-image: linear-gradient(to right, #ff008e, #ffcd1e);
   
-  border: 2px solid white;
-  border-radius: 6px;
+  border: 1px solid white;
+  border-radius: 2px;
   
   font-weight: bold;
   color: ${props => props.theme.white};
