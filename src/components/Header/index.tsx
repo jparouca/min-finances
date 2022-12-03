@@ -6,7 +6,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-
+        <span>Taka | Finances</span>
         <Dialog.Root>
           <Dialog.Trigger asChild>
             <NewTransactionButton>New Transaction</NewTransactionButton>
